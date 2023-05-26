@@ -12,6 +12,7 @@ namespace Memorer.Src
     {
         private List<Message> uncheckedMessages = new();
         private Message _currentMessage;
+        private bool _isBaloonTipShown = false;
 
         public void CheckMessages()
         {
@@ -30,24 +31,34 @@ namespace Memorer.Src
                 uncheckedMessages.Add(message);
             }
 
-            ShowUncheckedMessages();
             CheckWindowState();
+            ShowUncheckedMessages();
         }
         private void ShowUncheckedMessages()
         {
             if (uncheckedMessages.Count == 0)
             {
+                _isBaloonTipShown = false;
                 return;
             }
-            _currentMessage = uncheckedMessages.First();
             ShowMessage(_currentMessage);
         }
         private void CheckWindowState()
         {
+            if (uncheckedMessages.Count != 0)
+            {
+                _currentMessage = uncheckedMessages.First();
+            }
             if (Program.form1.WindowState != FormWindowState.Minimized)
             {
                 StopNotificationSound();
+                _isBaloonTipShown = false;
                 return;
+            }
+            if (!_isBaloonTipShown)
+            {
+                Program.form1.notifyIcon1.ShowBalloonTip(50000);
+                _isBaloonTipShown = true;
             }
             PlayNotificationSound();
             return;

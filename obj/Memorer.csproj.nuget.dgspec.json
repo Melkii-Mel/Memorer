@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project#.cringe\\Memorer\\Memorer\\Memorer.csproj": {}
+    "D:\\Project#.cringe\\.archive\\Memorer\\Memorer\\Memorer.csproj": {}
   },
   "projects": {
-    "D:\\Project#.cringe\\Memorer\\Memorer\\Memorer.csproj": {
+    "D:\\Project#.cringe\\.archive\\Memorer\\Memorer\\Memorer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project#.cringe\\Memorer\\Memorer\\Memorer.csproj",
+        "projectUniqueName": "D:\\Project#.cringe\\.archive\\Memorer\\Memorer\\Memorer.csproj",
         "projectName": "Memorer",
-        "projectPath": "D:\\Project#.cringe\\Memorer\\Memorer\\Memorer.csproj",
+        "projectPath": "D:\\Project#.cringe\\.archive\\Memorer\\Memorer\\Memorer.csproj",
         "packagesPath": "C:\\Users\\Mel\\.nuget\\packages\\",
-        "outputPath": "D:\\Project#.cringe\\Memorer\\Memorer\\obj\\",
+        "outputPath": "D:\\Project#.cringe\\.archive\\Memorer\\Memorer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\VS\\Visual Studio Libraries\\NuGetPackages"

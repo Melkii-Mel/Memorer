@@ -164,6 +164,9 @@
             // 
             // notifyIcon1
             // 
+            notifyIcon1.BalloonTipIcon = ToolTipIcon.Info;
+            notifyIcon1.BalloonTipText = "Проверь приложение";
+            notifyIcon1.BalloonTipTitle = "Новое упоминание";
             notifyIcon1.Icon = (Icon)resources.GetObject("notifyIcon1.Icon");
             notifyIcon1.Text = "Memorer";
             notifyIcon1.Visible = true;
@@ -267,11 +270,11 @@
         new private Button AcceptButton;
         private Button button1;
         new private Button Close;
-        private NotifyIcon notifyIcon1;
         private System.Windows.Forms.Timer timer1;
         private DataGridView Data;
         private TextBox NotificationTextBox;
         private Button GotItButton;
         private Button SettingsButton;
+        public NotifyIcon notifyIcon1;
     }
 }
